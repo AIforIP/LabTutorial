@@ -4,7 +4,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Lab Tutorial',
   description: '面向中文学生的计算机科学与人工智能实践教程',
-  base: '/LabTutorial/',
+  base: '/',
   cleanUrls: true,
   lastUpdated: true,
   head: [
@@ -16,8 +16,7 @@ export default defineConfig({
     siteTitle: 'Lab Tutorial',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'LLM from Scratch', link: '/llm/' },
-      { text: 'GitHub', link: 'https://github.com/AIforIP/LabTutorial' }
+      { text: 'GitHub', link: 'https://github.com/AIforIP' }
     ],
     sidebar: {
       '/llm/': [
@@ -58,7 +57,7 @@ export default defineConfig({
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/AIforIP/LabTutorial' }
+      { icon: 'github', link: 'https://github.com/AIforIP' }
     ],
     search: {
       provider: 'local',
