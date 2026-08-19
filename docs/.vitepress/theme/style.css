@@ -145,6 +145,25 @@ body {
   border-radius: 6px;
 }
 
+/* MathJax：块级公式保持完整宽度，窄屏时横向滚动而不挤坏正文。 */
+.vp-doc mjx-container {
+  color: var(--vp-c-text-1);
+  font-size: 105% !important;
+}
+
+.vp-doc mjx-container[display='true'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 20px 0 !important;
+  padding: 5px 2px 7px;
+  text-align: center;
+  scrollbar-width: thin;
+}
+
+.vp-doc mjx-container[display='true'] > svg {
+  max-width: none;
+}
+
 .VPDocAsideOutline .content {
   border-left-color: var(--vp-c-divider);
 }

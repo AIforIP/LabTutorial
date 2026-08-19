@@ -7,6 +7,9 @@ export default defineConfig({
   base: '/',
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    math: true
+  },
   head: [
     ['meta', { name: 'theme-color', content: '#fafaf8' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }]
