@@ -1,0 +1,267 @@
+:root {
+  --vp-c-bg: #fafaf8;
+  --vp-c-bg-alt: #f3f3f0;
+  --vp-c-bg-soft: #f0f1ed;
+  --vp-c-bg-elv: #fff;
+  --vp-c-text-1: #20221f;
+  --vp-c-text-2: #62665f;
+  --vp-c-text-3: #8a8e86;
+  --vp-c-border: #dedfd9;
+  --vp-c-divider: #e7e7e2;
+  --vp-c-gutter: #e7e7e2;
+  --vp-c-brand-1: #28624f;
+  --vp-c-brand-2: #367761;
+  --vp-c-brand-3: #e1eee8;
+  --vp-c-brand-soft: #e8f1ed;
+  --vp-font-family-base: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --vp-nav-height: 58px;
+  --vp-sidebar-width: 248px;
+  --vp-layout-max-width: 1380px;
+}
+
+.dark {
+  --vp-c-bg: #191b19;
+  --vp-c-bg-alt: #202320;
+  --vp-c-bg-soft: #252825;
+  --vp-c-bg-elv: #202320;
+  --vp-c-text-1: #e8eae6;
+  --vp-c-text-2: #a8ada5;
+  --vp-c-border: #373b36;
+  --vp-c-divider: #30342f;
+  --vp-c-brand-1: #7fc0a7;
+  --vp-c-brand-2: #9bcdb9;
+  --vp-c-brand-3: #244a3d;
+  --vp-c-brand-soft: #203a32;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: 0.01em;
+}
+
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBar .title {
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .text {
+  font-size: 14px;
+}
+
+.VPSidebar {
+  padding-top: 20px !important;
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+.VPSidebarItem .text {
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.VPSidebarItem.level-0 > .item > .text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--vp-c-text-3);
+}
+
+.VPDoc .container {
+  max-width: 1120px;
+}
+
+.VPDoc .content {
+  max-width: 760px;
+}
+
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.82;
+}
+
+.vp-doc h1 {
+  margin: 0 0 20px;
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.22;
+  letter-spacing: -0.035em;
+}
+
+.vp-doc h2 {
+  margin: 40px 0 12px;
+  padding-top: 8px;
+  border-top: 0;
+  font-size: 24px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h3 {
+  margin: 28px 0 8px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.vp-doc p,
+.vp-doc ul,
+.vp-doc ol {
+  margin: 12px 0;
+}
+
+.vp-doc li + li {
+  margin-top: 4px;
+}
+
+.vp-doc a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.vp-doc blockquote {
+  margin: 18px 0;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--vp-c-brand-2);
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc div[class*='language-'] {
+  margin: 18px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.vp-doc .custom-block {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-radius: 6px;
+}
+
+.VPDocAsideOutline .content {
+  border-left-color: var(--vp-c-divider);
+}
+
+.outline-link {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* 首页：保持像一份清楚的课程索引，而不是营销落地页。 */
+.home-page .VPDoc {
+  padding-top: 64px;
+}
+
+.home-page .VPDoc .content {
+  max-width: 880px;
+}
+
+.home-intro {
+  max-width: 720px;
+  margin-bottom: 52px;
+}
+
+.home-kicker {
+  margin: 0 0 12px !important;
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-intro h1 {
+  margin-bottom: 16px;
+  font-size: clamp(38px, 7vw, 64px);
+  line-height: 1.08;
+}
+
+.home-lead {
+  max-width: 630px;
+  color: var(--vp-c-text-2);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.material-list {
+  margin-top: 12px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.material-entry {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: start;
+  padding: 23px 2px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.material-entry:hover .material-title {
+  color: var(--vp-c-brand-1);
+}
+
+.material-date,
+.material-state {
+  padding-top: 3px;
+  color: var(--vp-c-text-3);
+  font-size: 13px;
+}
+
+.material-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.5;
+  transition: color 0.15s ease;
+}
+
+.material-desc {
+  display: block;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.material-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 9px;
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .home-page .VPDoc {
+    padding-top: 38px;
+  }
+
+  .home-intro {
+    margin-bottom: 38px;
+  }
+
+  .material-entry {
+    grid-template-columns: 1fr auto;
+    gap: 8px 16px;
+  }
+
+  .material-date {
+    grid-column: 1 / -1;
+  }
+
+  .vp-doc {
+    font-size: 15.5px;
+    line-height: 1.78;
+  }
+}
