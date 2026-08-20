@@ -12,6 +12,14 @@ import { computed, ref } from 'vue'
 
 const tutorials = [
   {
+    title: 'Before LLM：大语言模型前的基础知识',
+    description: '从科研工具、Python 编程到机器学习、深度学习与 NLP，建立进入大模型研究前的基础能力。',
+    href: './before-llm/',
+    tags: ['入门', '科研训练', '机器学习', '深度学习', 'NLP'],
+    status: '持续更新',
+    date: '2026.08'
+  },
+  {
     title: 'LLM from Scratch：从零构建大语言模型',
     description: '从 Tokenizer、Transformer 到训练系统，理解语言模型如何从原始文本一步步建立起来。',
     href: './llm/',
